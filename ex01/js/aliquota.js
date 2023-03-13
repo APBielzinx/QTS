@@ -29,12 +29,12 @@ export function aliquota(){
         valorPagar = (rendimento - 4664.68) * 0.275 + 636.13;
       }
 
-      console.log(`Nome: ${nome}`)
+      /*console.log(`Nome: ${nome}`)
       console.log(`CPF: ${cpf}`);
       console.log(`Rendimento anual: R$ ${rendimento}`);
       console.log(`Alíquota do imposto de renda: ${aliquota}%`);
       console.log(`Valor a pagar: R$ ${valorPagar.toFixed(2)}`);
-
+*/
       var variaveis = [nome,cpf,rendimento,aliquota,valorPagar]
 
       return variaveis
