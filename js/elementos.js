@@ -13,10 +13,10 @@ export function elementos(){
   // e dá à ele conteúdo
   var divNova = document.createElement("div");
   var conteudoNovo = document.createTextNode(`Nome: ${nome} 
-                                              CPF: ${cpf}\n 
+                                              CPF: ${cpf}\n
                                               Rendimento anual: R$ ${rendimento}\n 
                                               Alíquota do imposto de renda: ${aliquotares}%\n 
-                                              Valor a pagar: R$ ${valorPagar.toFixed(2)}`);
+                                              Valor a pagar: R$ ${valorPagar.toLocaleString('pt-BR')}`);
 
   divNova.appendChild(conteudoNovo); //adiciona o nó de texto à nova div criada
 
