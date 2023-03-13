@@ -1,0 +1,24 @@
+button {
+    border: 2px solid white;
+    margin: 20px 40px;
+    padding: 10px 20px;
+    border-radius: 500px;
+    background-color: white;
+    color: black;
+    font-weight: 700;
+    width: 150px;
+    
+
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+label,h3{
+    color: beige;
+}
+
+input {
+    width: 300px;
+}
