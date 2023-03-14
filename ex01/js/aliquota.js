@@ -15,6 +15,7 @@ export function aliquota(){
     if (rendimento <= 1903.98) {
         aliquota = 0;
         valorPagar = 0;
+        alert("Você está livre desse imposto :)")
       } else if (rendimento <= 2826.65) {
         aliquota = 7.5;
         valorPagar = (rendimento - 1903.98) * 0.075;

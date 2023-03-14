@@ -10,9 +10,12 @@ var valorPagar = dados[4]
 
 export function elementos(){
       // cria um novo elemento div
-  // e dá à ele conteúdo
+     // e dá à ele conteúdo
+
+     console.log(rendimento.toFixed(2))
+
   var divNova = document.createElement("div");
-  var conteudoNovo = document.createTextNode(`Nome: ${nome} 
+  var conteudoNovo = document.createTextNode(`Nome: ${nome}\n
                                               CPF: ${cpf}\n
                                               Rendimento anual: R$ ${rendimento}\n 
                                               Alíquota do imposto de renda: ${aliquotares}%\n 
