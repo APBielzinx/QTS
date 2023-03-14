@@ -12,7 +12,7 @@ export function elementos(){
       // cria um novo elemento div
      // e dá à ele conteúdo
 
-     console.log(rendimento.toFixed(2))
+     
 
   var divNova = document.createElement("div");
   var conteudoNovo = document.createTextNode(`Nome: ${nome}\n
