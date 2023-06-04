@@ -18,17 +18,17 @@ export function aliquota(){
         aliquota = 0;
         valorPagar = 0;
         alert("Você está livre desse imposto :)")
-      } else if (rendimento  >= 22847.77 && rendimento < 33919.80) {
+      } else if (rendimento  >= 22847.77 && rendimento <= 33919.80) {
 
         aliquota = 7.5;
         valorPagar = rendimento * 0.075;
 
-      } else if (rendimento  >= 33919.81 && rendimento < 45012.60) {
+      } else if (rendimento  >= 33919.81 && rendimento <= 45012.60) {
 
         aliquota = 15;
         valorPagar = rendimento * 0.15 
 
-      } else if (rendimento  >= 45012.61 && rendimento < 55976.16) {
+      } else if (rendimento  >= 45012.61 && rendimento <= 55976.16) {
 
         aliquota = 22.5;
         valorPagar = rendimento * 0.225
