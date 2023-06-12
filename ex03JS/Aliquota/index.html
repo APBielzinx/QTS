@@ -9,6 +9,10 @@
 </head>
 <body  bgcolor="#001E5A">
     
+    <div id="erro" style="display: none;" class="alert alert-danger alert-dismissible fade show">
+        <button type="button" class="close" onclick="hide()">&times;</button>
+       Inscira um cpf valido
+</div>
         <form method="get" action="apresenta.html">
             <h1>Calcule sua alíquota</h1>
             <div class="area-input">
@@ -26,26 +30,45 @@
                 <input type="text" name="rendimento" placeholder="rendimento anual" required id="rendimento">
                
             </div>
-            <button type="submit">Enviar</button>
+            <button type="submit" onclick="testar()">Enviar</button>
         
 
         </form>
+        <script> 
+            setTimeout(function () {
+                 document.getElementById("erro").style.display = "none";
+               }, 3000);
+               function hide(){
+               document.getElementById("erro").style.display = "none";
+               }
+           </script> 
+            
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
         <script>
            
-           
-            var cpf = document.getElementById('cpf')
+        
           
 
-            document.getElementById("nome").onkeypress = function(e) {
+            document.getElementById("nome").onkeypress = function testeNome(e) {
          var chr = String.fromCharCode(e.which);
-         if ("qwertyuioplkjhgfdsazxcvbnmQWERTYUIOPLKJHGFDSAZXCVBNM".indexOf(chr) < 0)
-           return false;
+         if ("qwertyuioplkjhgfdsazxcvbnmQWERTYUIOPLKJHGFDSAZXCVBNM".indexOf(chr) < 0){
+            alert("esse caracter não é permitido")
+            document.getElementById("nome").value = ""
+            window.location.reload(true);
+
+         }
+    
        };
-       document.getElementById("rendimento").onkeypress = function(e) {
+       document.getElementById("rendimento").onkeypress = function testeRendimento(e) {
          var chr = String.fromCharCode(e.which);
-         if ("1234567890.".indexOf(chr) < 0)
-           return false;
+         if ("1234567890.".indexOf(chr) < 0){
+            alert("esse caracter não é permitido")
+            document.getElementById("rendimento").value = ""
+            window.location.reload(true);
+         }
+       
+         
+        
        };
 
        function CPF(){"user_strict";function r(r){for(var t=null,n=0;9>n;++n)t+=r.toString().charAt(n)*(10-n);var i=t%11;return i=2>i?0:11-i}function t(r){for(var t=null,n=0;10>n;++n)t+=r.toString().charAt(n)*(11-n);var i=t%11;return i=2>i?0:11-i}var n="CPF Inválido",i="CPF Válido";this.gera=function(){for(var n="",i=0;9>i;++i)n+=Math.floor(9*Math.random())+"";var o=r(n),a=n+"-"+o+t(n+""+o);return a},this.valida=function(o){for(var a=o.replace(/\D/g,""),u=a.substring(0,9),f=a.substring(9,11),v=0;10>v;v++)if(""+u+f==""+v+v+v+v+v+v+v+v+v+v+v)return n;var c=r(u),e=t(u+""+c);return f.toString()===c.toString()+e.toString()?i:n}}
@@ -53,19 +76,21 @@
 
 
 var CPF = new CPF();
-document.write(CPF.valida("24089231825"));
-
 
 $("#cpf").keypress(function(){
  $("#resposta").html(CPF.valida($(this).val()));
+
+
+
 });
 
 $("#cpf").blur(function(){
   $("#resposta").html(CPF.valida($(this).val()));
+ if(CPF.valida($(this).val()) == "CPF Inválido"){
+var cpf = document.getElementById('cpf').value = ""
+var alert = document.getElementById('erro').style.display =""
+ }
 });
-
-
-
 
         </script>
      
