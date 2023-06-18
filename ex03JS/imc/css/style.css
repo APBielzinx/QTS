@@ -59,7 +59,7 @@ form .area-input input {
     border-radius: 2px;
     border-bottom: 2px solid #ffff00;
     background: black;
-    color: #b43333;
+    color: GREEN;
     margin-bottom: 20px;
 }
 
@@ -76,7 +76,7 @@ form button {
 
 form button:hover {
     filter: brightness(.9);
-    background-color:rgb(5, 79, 119);
+    background-color: GREEN;
 }
 
 .div1{
