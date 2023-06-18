@@ -11,14 +11,14 @@ var msg
   
     if(ladoA == ladoB && ladoB == ladoC && ladoA == ladoC) {
         console.log("Triângulo equilatero")
-        msg = 'Triângulo equilatero'
+        msg =  'equilátero'
 
     } else if (ladoA == ladoB || ladoA == ladoC || ladoB == ladoC ) {
-        console.log("Triângulo isosceles")
-        msg = 'Triângulo isosceles'
+        console.log("isósceles")
+        msg = ' isósceles'
     } else if (ladoA != ladoB && ladoA != ladoC && ladoC != ladoB) {
-        console.log("Triângulo escaleno")
-        msg = 'Triângulo escaleno'
+        console.log("escaleno")
+        msg = 'escaleno'
     }else{
         console.log ("os lados não formam um triângulo")
         msg = 'os lados não formam um triângulo'
