@@ -1,5 +1,5 @@
 
-import { Triangulo } from "./triangulo.js";
+import { Triangulo } from "./imc.js";
 
 var dados = Triangulo()
 
@@ -14,7 +14,7 @@ export function elementos(){
      
 
   var divNova = document.createElement("div");
-  var conteudoNovo = document.createTextNode(`o triangulo é: ${msg}`);
+  var conteudoNovo = document.createTextNode(`O IMC é: ${msg}`);
 
   divNova.appendChild(conteudoNovo); //adiciona o nó de texto à nova div criada
 

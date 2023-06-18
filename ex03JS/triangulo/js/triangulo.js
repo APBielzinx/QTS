@@ -4,19 +4,19 @@ import { Dados } from "./index.js";
  
 var dados = Dados();
 
-var ladoA = dados[0]
-var ladoB = dados[1]
-var ladoC = dados[2]
+var Nome = dados[0]
+var Peso = dados[1]
+var Altura = dados[2]
 var msg
   
-    if(ladoA == ladoB && ladoB == ladoC && ladoA == ladoC) {
+    if(Nome == Peso && Peso == Altura && Nome == Altura) {
         console.log("Triângulo equilatero")
         msg =  'equilátero'
 
-    } else if (ladoA == ladoB || ladoA == ladoC || ladoB == ladoC ) {
+    } else if (Nome == Peso || Nome == Altura || Peso == Altura ) {
         console.log("isósceles")
         msg = ' isósceles'
-    } else if (ladoA != ladoB && ladoA != ladoC && ladoC != ladoB) {
+    } else if (Nome != Peso && Nome != Altura && Altura != Peso) {
         console.log("escaleno")
         msg = 'escaleno'
     }else{
@@ -26,7 +26,7 @@ var msg
     
 
 
-    var variaveis = [ladoA,ladoB,ladoC,msg]
+    var variaveis = [Nome,Peso,Altura,msg]
 
       return variaveis
 }

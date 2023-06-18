@@ -1,5 +1,5 @@
 import { elementos } from "./componentes.js";
-import { Triangulo } from "./triangulo.js";
+import { IMC } from "./imc.js";
 
 export function Dados(){
 
@@ -23,5 +23,5 @@ return dados
 
 }
 Dados()
-Triangulo()
+IMC()
 elementos()

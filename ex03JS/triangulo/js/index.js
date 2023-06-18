@@ -6,16 +6,16 @@ export function Dados(){
     const urlParams = new URLSearchParams(window.location.search);
     
 
-    var ladoA = urlParams.get("ladoA")
-    var ladoB = urlParams.get("ladoB")
-    var ladoC = urlParams.get("ladoC")
+    var Nome = urlParams.get("Nome")
+    var Peso = urlParams.get("Peso")
+    var Altura = urlParams.get("Altura")
     
-    console.log(ladoA)
+    console.log(Nome)
     
 var dados = [
-            ladoA,
-            ladoB,
-            ladoC
+            Nome,
+            Peso,
+            Altura
            ]
 
          
