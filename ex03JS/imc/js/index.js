@@ -1,7 +1,7 @@
 import { elementos } from "./componentes.js";
 import { IMC } from "./imc.js";
 
-export function Dados(){
+export default function Dados(){
 
     const urlParams = new URLSearchParams(window.location.search);
     

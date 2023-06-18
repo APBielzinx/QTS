@@ -1,24 +1,26 @@
-
-import { IMC } from "../imc.js";
+import { IMC } from "./imc.js";
 
 var dados = IMC()
-
-
-var msg = dados[3]
-
 
 export function elementos(){
       // cria um novo elemento div
      // e dá à ele conteúdo
 
+     var Nome = dados[0]
+     var msg = dados[3]
+
+
+     let body = document.querySelector('body')
+
      
+function criarTags(tag) {
+  let novaTag = document.createElement(tag)
+  return novaTag
+}
 
-  var divNova = document.createElement("div");
-  var conteudoNovo = document.createTextNode`${Nome}, seu IMC é: ${resultado}. ${msg}`;
 
-  divNova.appendChild(conteudoNovo); //adiciona o nó de texto à nova div criada
+let texto = new criarTags('h1') 
+body.appendChild(texto)
+texto.textContent = `Olá ${Nome} seu imc é ${msg}`
 
-  // adiciona o novo elemento criado e seu conteúdo ao DOM
-  var divAtual = document.getElementById("div1");
-  document.body.insertBefore(divNova, divAtual);
 }

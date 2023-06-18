@@ -12,18 +12,47 @@
     <form method ="GET" action ="apresenta.html">
         <h1>Descubra qual é seu IMC</h1>
         <div  class="area-input"> 
-            <input type =" text " name ="Nome" placeholder="Nome" >
+            <input type =" text " name ="Nome" placeholder="Nome"  id="nome" required>
         </div>
         <div class="area-input">
-            <input type = " text " name ="Peso" placeholder="Peso">
+            <input type = " text " name ="Peso" placeholder="Peso" id="peso" required>
         </div>
        <div class="area-input">
-        <input input  type =" text " name ="Altura" placeholder="Altura">
+        <input input  type =" text " name ="Altura" placeholder="Altura" id="altura" required>
        </div>
         
         <button  type ="submit" > Ver </button >
 
     </form>
    
+    <script>
+                document.getElementById("nome").onkeypress = function testeNome(e) {
+         var chr = String.fromCharCode(e.which);
+         if ("qwertyuioplkjhgfdsazxcvbnmQWERTYUIOPLKJHGFDSAZXCVBNM".indexOf(chr) < 0){
+            alert("esse caracter não é permitido")
+            document.getElementById("nome").value = ""
+            window.location.reload(true);
+
+         }
+    
+       };
+       document.getElementById("peso").onkeypress = function testepeso(e) {
+         var chr = String.fromCharCode(e.which);
+         if ("1234567890.".indexOf(chr) < 0){
+            alert("esse caracter não é permitido")
+            document.getElementById("peso").value = ""
+            window.location.reload(true);
+         }
+        }
+        document.getElementById("altura").onkeypress = function testealtura(e) {
+         var chr = String.fromCharCode(e.which);
+         if ("1234567890.".indexOf(chr) < 0){
+            alert("esse caracter não é permitido")
+            document.getElementById("altura").value = ""
+            window.location.reload(true);
+          
+         }
+        }
+    </script>
 </body>
 </html>
