@@ -38,7 +38,7 @@ var resultado = Peso/(Altura*Altura)
     
 
 
-    var variaveis = [Nome,Peso,Altura,msg]
+    var variaveis = [Nome,Peso,Altura,msg,resultado]
 
       return variaveis
 }

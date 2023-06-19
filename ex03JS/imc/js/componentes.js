@@ -8,6 +8,7 @@ export function elementos(){
 
      var Nome = dados[0]
      var msg = dados[3]
+     var imc = dados[4]
 
 
      let body = document.querySelector('body')
@@ -19,8 +20,17 @@ function criarTags(tag) {
 }
 
 
-let texto = new criarTags('h1') 
-body.appendChild(texto)
-texto.textContent = `Olá ${Nome} seu imc é ${msg}`
+let nomeNaTela = new criarTags('h1') 
+body.appendChild(nomeNaTela)
+nomeNaTela.textContent = `Olá, ${Nome}`
+nomeNaTela.classList = "nomeNaTela"
+
+let imcNaTela = new criarTags('h1') 
+body.appendChild(imcNaTela)
+imcNaTela.textContent = `. Seu imc é: ${imc.toFixed(2)}`
+
+let msgNaTela = new criarTags('h1') 
+body.appendChild(msgNaTela)
+msgNaTela.textContent = `. Sua classificação é:  ${msg}`
 
 }
