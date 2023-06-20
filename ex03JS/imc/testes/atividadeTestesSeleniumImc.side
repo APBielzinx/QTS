@@ -1,0 +1,2087 @@
+{
+  "id": "dce38a7a-c58e-4f28-a199-20fc02afa7e9",
+  "version": "2.0",
+  "name": "atividadeTestesSeleniumImc",
+  "url": "http://127.0.0.1:5501/ex03JS/imc/index.html",
+  "tests": [{
+    "id": "79d96b8a-c0f9-4c68-9945-2aa006cadf85",
+    "name": "Campo não preenchido",
+    "commands": [{
+      "id": "87086d51-7f0b-40dd-9394-1daba389b485",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:5501/ex03JS/imc/index.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "897bf4e4-1df4-41d5-b7b2-26d1d465ec5a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d1ae8ce2-434f-4948-af25-71aa9f74de85",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Ver')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "ef3a27d7-4c31-4915-8fa8-324f921bc565",
+    "name": "Todos os campos corretos",
+    "commands": [{
+      "id": "2a23ae81-e105-493a-a1b1-330467dd1425",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:5501/ex03JS/imc/index.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e1a9d15d-eb07-4d41-aea2-992d234704d0",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "585a01ef-1920-439e-ab1d-e82700bcc999",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Ver')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2052322f-8d98-4dc8-a7ab-2e776aff3441",
+      "comment": "",
+      "command": "click",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//h1[2]", "xpath:position"],
+        ["xpath=//h1[contains(.,'. Seu imc é: 25.07')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8be25c1a-fa06-49f2-ab6c-40a124a6024d",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//h1[2]", "xpath:position"],
+        ["xpath=//h1[contains(.,'. Seu imc é: 25.07')]", "xpath:innerText"]
+      ],
+      "value": ". Seu imc é: 25.07"
+    }]
+  }, {
+    "id": "69c11e3d-8570-4b48-b61a-f510cfa14669",
+    "name": "Letra no peso",
+    "commands": [{
+      "id": "1e7798ef-f216-4ccc-9638-51c05b1fbab9",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:5501/ex03JS/imc/index.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "26c84e9a-13eb-4473-8bce-c3b5c3209279",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dbeea167-595c-4246-8c45-ca4d90d555cf",
+      "comment": "",
+      "command": "click",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=Nome", "name"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fdaf11ee-5718-41de-afc6-00349d403a03",
+      "comment": "",
+      "command": "type",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=Nome", "name"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Maria "
+    }, {
+      "id": "cd8f3645-eea5-4364-bda3-9efdcf030994",
+      "comment": "",
+      "command": "click",
+      "target": "id=peso",
+      "targets": [
+        ["id=peso", "id"],
+        ["name=Peso", "name"],
+        ["css=#peso", "css:finder"],
+        ["xpath=//input[@id='peso']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "158ec0b2-a8ea-419c-b71a-d7b3f3f0b5a6",
+      "comment": "",
+      "command": "type",
+      "target": "id=peso",
+      "targets": [
+        ["id=peso", "id"],
+        ["name=Peso", "name"],
+        ["css=#peso", "css:finder"],
+        ["xpath=//input[@id='peso']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "d"
+    }, {
+      "id": "3f45147f-9aa1-4a48-b509-17e9294a8fcf",
+      "comment": "",
+      "command": "assertAlert",
+      "target": "esse caracter não é permitido",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "e2ba7a37-c9a7-4bd1-bfa9-4da0fac20937",
+    "name": "Número do nome ",
+    "commands": [{
+      "id": "d0e5dc86-63a2-499b-b63b-6c6da26368af",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:5501/ex03JS/imc/index.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a6f23e78-421c-49ed-973e-dddd23dba6bc",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1cd058f6-cb16-4795-8f8c-e202ee287f78",
+      "comment": "",
+      "command": "click",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=Nome", "name"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2eae4a41-7f5e-4e4b-8faf-982b023d0142",
+      "comment": "",
+      "command": "type",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=Nome", "name"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "1"
+    }, {
+      "id": "af196018-6c8d-4d2c-8a16-99bd7eb9f6e6",
+      "comment": "",
+      "command": "assertAlert",
+      "target": "esse caracter não é permitido",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "b5ff3407-2c96-4827-bbd5-02df800ebe6f",
+    "name": "Campos com caracteres ",
+    "commands": [{
+      "id": "e4f7ba2d-ce50-4652-b497-3a13223b3f9f",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:5501/ex03JS/imc/index.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ebdf8adc-8c3d-48a4-b6f3-5b85b200a433",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "929881fe-0930-4d34-af67-fb8b4e317cbd",
+      "comment": "",
+      "command": "click",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=Nome", "name"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "46c049d0-8ce3-4b26-8b1f-736766f96d4b",
+      "comment": "",
+      "command": "type",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=Nome", "name"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "#"
+    }, {
+      "id": "da2c6cfd-2181-4f9d-bf46-a1ac3bc4619b",
+      "comment": "",
+      "command": "assertAlert",
+      "target": "esse caracter não é permitido",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "73b74597-8a21-491b-abef-c157334a22f3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.area-input:nth-child(3)",
+      "targets": [
+        ["css=.area-input:nth-child(3)", "css:finder"],
+        ["xpath=//div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "55e155b4-57f7-410f-9a30-3c3c30e1d7ed",
+      "comment": "",
+      "command": "click",
+      "target": "id=peso",
+      "targets": [
+        ["id=peso", "id"],
+        ["name=Peso", "name"],
+        ["css=#peso", "css:finder"],
+        ["xpath=//input[@id='peso']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5926956d-d42c-4e9d-b033-318f3c7f9ae2",
+      "comment": "",
+      "command": "type",
+      "target": "id=peso",
+      "targets": [
+        ["id=peso", "id"],
+        ["name=Peso", "name"],
+        ["css=#peso", "css:finder"],
+        ["xpath=//input[@id='peso']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "#"
+    }, {
+      "id": "b9a00ae8-4564-43f4-9f66-08bbcae35578",
+      "comment": "",
+      "command": "assertAlert",
+      "target": "esse caracter não é permitido",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4f728871-1ae5-4d29-aff0-829d5c1f89e2",
+      "comment": "",
+      "command": "click",
+      "target": "id=altura",
+      "targets": [
+        ["id=altura", "id"],
+        ["name=Altura", "name"],
+        ["css=#altura", "css:finder"],
+        ["xpath=//input[@id='altura']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1ccce94b-9a48-4d9c-826c-317e6458fc80",
+      "comment": "",
+      "command": "type",
+      "target": "id=altura",
+      "targets": [
+        ["id=altura", "id"],
+        ["name=Altura", "name"],
+        ["css=#altura", "css:finder"],
+        ["xpath=//input[@id='altura']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "$"
+    }, {
+      "id": "d7cda562-f60f-4eb5-a4dd-3726b9d57a03",
+      "comment": "",
+      "command": "assertAlert",
+      "target": "esse caracter não é permitido",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "d9b06329-5083-4325-9f97-04b5edf1122f",
+    "name": "Teste Condição magreza igualdade ",
+    "commands": [{
+      "id": "12ec97cb-f212-4ab6-ad89-dfbefd1a2bc5",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:5501/ex03JS/imc/index.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4970bc92-268f-4bd2-940a-0bbeb96f1a6a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "055bd26a-f7ac-4680-ac73-44f126e9a045",
+      "comment": "",
+      "command": "click",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=Nome", "name"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cfbd1316-a11e-4be7-a816-f5ce3c2a131b",
+      "comment": "",
+      "command": "type",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=Nome", "name"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Maria "
+    }, {
+      "id": "195a2a46-4266-4d96-960f-bca0ec8e9a02",
+      "comment": "",
+      "command": "click",
+      "target": "id=peso",
+      "targets": [
+        ["id=peso", "id"],
+        ["name=Peso", "name"],
+        ["css=#peso", "css:finder"],
+        ["xpath=//input[@id='peso']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ffc1d245-22f7-4255-8d65-76bc82f18845",
+      "comment": "",
+      "command": "type",
+      "target": "id=peso",
+      "targets": [
+        ["id=peso", "id"],
+        ["name=Peso", "name"],
+        ["css=#peso", "css:finder"],
+        ["xpath=//input[@id='peso']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "49.15"
+    }, {
+      "id": "b8fcac5e-879f-4772-a2af-21ea428f1f32",
+      "comment": "",
+      "command": "click",
+      "target": "id=altura",
+      "targets": [
+        ["id=altura", "id"],
+        ["name=Altura", "name"],
+        ["css=#altura", "css:finder"],
+        ["xpath=//input[@id='altura']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "72ece7c6-6bc4-43c7-9c4e-9e94affcb98b",
+      "comment": "",
+      "command": "type",
+      "target": "id=altura",
+      "targets": [
+        ["id=altura", "id"],
+        ["name=Altura", "name"],
+        ["css=#altura", "css:finder"],
+        ["xpath=//input[@id='altura']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "1.63"
+    }, {
+      "id": "e9dab21f-ae10-4a58-a220-77811ffef6c1",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Ver')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b314438c-03f4-4329-b722-a2adfb6a9025",
+      "comment": "",
+      "command": "click",
+      "target": "css=body",
+      "targets": [
+        ["css=body", "css:finder"],
+        ["xpath=//body", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b1f2ac65-cba9-4f39-9fbe-297cd335516e",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=h1:nth-child(5)",
+      "targets": [
+        ["css=h1:nth-child(5)", "css:finder"],
+        ["xpath=//h1[3]", "xpath:position"]
+      ],
+      "value": ". Sua classificação é: Magreza"
+    }]
+  }, {
+    "id": "0c6ea984-55a4-4aa2-9b2c-243874af178e",
+    "name": "Teste Condição magreza maior",
+    "commands": [{
+      "id": "acfd2f62-0926-4834-8026-c2e69fb6e02a",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:5501/ex03JS/imc/index.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c866eda1-0bf7-4c2e-85ea-5c4a64fb2c69",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d5e2d009-cef8-44d0-82f3-1a1f20a24431",
+      "comment": "",
+      "command": "click",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=Nome", "name"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "78ec7364-b317-4b68-8186-d48ca10dbcda",
+      "comment": "",
+      "command": "type",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=Nome", "name"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Maria "
+    }, {
+      "id": "a9f1e9f9-c6de-48be-b3af-ebb7e5815e60",
+      "comment": "",
+      "command": "click",
+      "target": "id=peso",
+      "targets": [
+        ["id=peso", "id"],
+        ["name=Peso", "name"],
+        ["css=#peso", "css:finder"],
+        ["xpath=//input[@id='peso']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4a705c70-73fa-4762-a46d-be726d395135",
+      "comment": "",
+      "command": "type",
+      "target": "id=peso",
+      "targets": [
+        ["id=peso", "id"],
+        ["name=Peso", "name"],
+        ["css=#peso", "css:finder"],
+        ["xpath=//input[@id='peso']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "49.45"
+    }, {
+      "id": "0d8db112-96c4-469b-9c5b-48aeb6610d45",
+      "comment": "",
+      "command": "click",
+      "target": "id=altura",
+      "targets": [
+        ["id=altura", "id"],
+        ["name=Altura", "name"],
+        ["css=#altura", "css:finder"],
+        ["xpath=//input[@id='altura']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f57af18b-603c-44ee-88df-ee95822d9b21",
+      "comment": "",
+      "command": "type",
+      "target": "id=altura",
+      "targets": [
+        ["id=altura", "id"],
+        ["name=Altura", "name"],
+        ["css=#altura", "css:finder"],
+        ["xpath=//input[@id='altura']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "1.63"
+    }, {
+      "id": "8b721c85-ea20-4dee-ad87-3ebd239d636e",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Ver')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "92edaef5-bd0a-4764-9244-5474cdee76da",
+      "comment": "",
+      "command": "click",
+      "target": "css=body",
+      "targets": [
+        ["css=body", "css:finder"],
+        ["xpath=//body", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5d1d059c-d7d9-4277-92a1-fec424387844",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=h1:nth-child(5)",
+      "targets": [
+        ["css=h1:nth-child(5)", "css:finder"],
+        ["xpath=//h1[3]", "xpath:position"]
+      ],
+      "value": ". Sua classificação é: Normal"
+    }]
+  }, {
+    "id": "6da0422e-cd3b-4ea6-aa71-26a3712bd93c",
+    "name": "Teste Condição magreza menor",
+    "commands": [{
+      "id": "00c829ea-863f-45c7-88e6-c7c7c07a775e",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:5501/ex03JS/imc/index.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "49f00b2a-5648-4b1a-950a-bc8bbc4c33a7",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a242c96d-5b1f-4248-b0c9-7e8b764aeef3",
+      "comment": "",
+      "command": "click",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=Nome", "name"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b270e9cf-6712-4fb7-9cce-5d5e5ac7edbd",
+      "comment": "",
+      "command": "type",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=Nome", "name"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Maria "
+    }, {
+      "id": "3c5ee11e-acef-4a68-abb0-1a1af7ce5239",
+      "comment": "",
+      "command": "click",
+      "target": "id=peso",
+      "targets": [
+        ["id=peso", "id"],
+        ["name=Peso", "name"],
+        ["css=#peso", "css:finder"],
+        ["xpath=//input[@id='peso']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "334f5615-3d8d-4194-a13c-0a18ac57184a",
+      "comment": "",
+      "command": "type",
+      "target": "id=peso",
+      "targets": [
+        ["id=peso", "id"],
+        ["name=Peso", "name"],
+        ["css=#peso", "css:finder"],
+        ["xpath=//input[@id='peso']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "49"
+    }, {
+      "id": "576ac7c3-5381-45d8-a944-16907f20129d",
+      "comment": "",
+      "command": "click",
+      "target": "id=altura",
+      "targets": [
+        ["id=altura", "id"],
+        ["name=Altura", "name"],
+        ["css=#altura", "css:finder"],
+        ["xpath=//input[@id='altura']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e17e4d3e-ed73-477d-a305-adc1b0b4aa73",
+      "comment": "",
+      "command": "type",
+      "target": "id=altura",
+      "targets": [
+        ["id=altura", "id"],
+        ["name=Altura", "name"],
+        ["css=#altura", "css:finder"],
+        ["xpath=//input[@id='altura']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "1.63"
+    }, {
+      "id": "a4e47c68-89fb-4878-8ea4-95cb3d1e245a",
+      "comment": "",
+      "command": "click",
+      "target": "css=form",
+      "targets": [
+        ["css=form", "css:finder"],
+        ["xpath=//form[@action='apresenta.html']", "xpath:attributes"],
+        ["xpath=//form", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "00a78224-66ff-4bb3-b791-c83e6e3673f2",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Ver')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9b899881-1626-4063-b636-e1064d721c54",
+      "comment": "",
+      "command": "click",
+      "target": "css=body",
+      "targets": [
+        ["css=body", "css:finder"],
+        ["xpath=//body", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cd81481b-5006-4134-965a-2238a24f0d67",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=h1:nth-child(5)",
+      "targets": [
+        ["css=h1:nth-child(5)", "css:finder"],
+        ["xpath=//h1[3]", "xpath:position"]
+      ],
+      "value": ". Sua classificação é: Magreza"
+    }]
+  }, {
+    "id": "faaa1075-26ec-4e36-bf36-aa1257e5e525",
+    "name": "Teste Condição Normal igualdade ",
+    "commands": [{
+      "id": "6606bf6a-5e33-4c4c-9f05-373a3bec254f",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:5501/ex03JS/imc/index.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0129345b-6dfc-4682-bc3d-a718d2c29951",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fe1bbc2c-abbc-4b9a-957c-cdea76637962",
+      "comment": "",
+      "command": "click",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=Nome", "name"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d835c558-b369-45da-90ea-dd3720056db1",
+      "comment": "",
+      "command": "type",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=Nome", "name"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Maria "
+    }, {
+      "id": "dd42c686-13ee-4596-abad-9f204267f363",
+      "comment": "",
+      "command": "click",
+      "target": "id=peso",
+      "targets": [
+        ["id=peso", "id"],
+        ["name=Peso", "name"],
+        ["css=#peso", "css:finder"],
+        ["xpath=//input[@id='peso']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3d6cd73d-4dc8-4b86-959e-9e37eaca9a0b",
+      "comment": "",
+      "command": "type",
+      "target": "id=peso",
+      "targets": [
+        ["id=peso", "id"],
+        ["name=Peso", "name"],
+        ["css=#peso", "css:finder"],
+        ["xpath=//input[@id='peso']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "66.15"
+    }, {
+      "id": "28af816e-ada4-4dc0-bfe9-b8924e84c264",
+      "comment": "",
+      "command": "click",
+      "target": "id=altura",
+      "targets": [
+        ["id=altura", "id"],
+        ["name=Altura", "name"],
+        ["css=#altura", "css:finder"],
+        ["xpath=//input[@id='altura']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d7596213-3e96-49f9-92ef-2f9589cd8d60",
+      "comment": "",
+      "command": "type",
+      "target": "id=altura",
+      "targets": [
+        ["id=altura", "id"],
+        ["name=Altura", "name"],
+        ["css=#altura", "css:finder"],
+        ["xpath=//input[@id='altura']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "1.63"
+    }, {
+      "id": "940f8aec-2029-4703-b0e9-349684c6dbbe",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Ver')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e6a6568d-d3a0-4ff4-b729-4ec59c389172",
+      "comment": "",
+      "command": "click",
+      "target": "css=body",
+      "targets": [
+        ["css=body", "css:finder"],
+        ["xpath=//body", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "09242a5d-0d31-4c79-b7f7-796313beccae",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=h1:nth-child(5)",
+      "targets": [
+        ["css=h1:nth-child(5)", "css:finder"],
+        ["xpath=//h1[3]", "xpath:position"]
+      ],
+      "value": ". Sua classificação é: Normal"
+    }]
+  }, {
+    "id": "76243a4e-bbcd-448f-85fa-842ae0c2ad6e",
+    "name": "Teste Condição Normal maior ",
+    "commands": [{
+      "id": "bb66b103-bf61-4d78-b146-446c5afa362d",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:5501/ex03JS/imc/index.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "aa7f7ea0-8009-42f4-b4b9-b6fc46d3e585",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "85473e5c-8077-407b-b77d-d4de5862c0a7",
+      "comment": "",
+      "command": "click",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=Nome", "name"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a1576da0-e18e-4e33-ab6c-1a01b07db719",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cdd05d96-f299-404c-8cd4-b9f832f14185",
+      "comment": "",
+      "command": "type",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=Nome", "name"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Maria "
+    }, {
+      "id": "d531f709-0d4c-48f7-91e8-4d44cddf1101",
+      "comment": "",
+      "command": "click",
+      "target": "id=peso",
+      "targets": [
+        ["id=peso", "id"],
+        ["name=Peso", "name"],
+        ["css=#peso", "css:finder"],
+        ["xpath=//input[@id='peso']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bc015402-83e4-48cc-9505-25167592a817",
+      "comment": "",
+      "command": "click",
+      "target": "id=peso",
+      "targets": [
+        ["id=peso", "id"],
+        ["name=Peso", "name"],
+        ["css=#peso", "css:finder"],
+        ["xpath=//input[@id='peso']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f13b3d10-6b52-4e34-8bb9-a77be18dcfce",
+      "comment": "",
+      "command": "type",
+      "target": "id=peso",
+      "targets": [
+        ["id=peso", "id"],
+        ["name=Peso", "name"],
+        ["css=#peso", "css:finder"],
+        ["xpath=//input[@id='peso']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "66.42"
+    }, {
+      "id": "8e9260b7-1bab-46f9-9def-bacbc38dab87",
+      "comment": "",
+      "command": "click",
+      "target": "id=altura",
+      "targets": [
+        ["id=altura", "id"],
+        ["name=Altura", "name"],
+        ["css=#altura", "css:finder"],
+        ["xpath=//input[@id='altura']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5143b1ff-bfac-451d-9b9b-3db07b2ff556",
+      "comment": "",
+      "command": "type",
+      "target": "id=altura",
+      "targets": [
+        ["id=altura", "id"],
+        ["name=Altura", "name"],
+        ["css=#altura", "css:finder"],
+        ["xpath=//input[@id='altura']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "1.63"
+    }, {
+      "id": "37a363cf-53aa-4741-adb4-3876d0157b73",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Ver')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "296d3e6c-98d8-4e10-9782-086808ab2d36",
+      "comment": "",
+      "command": "click",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//h1[2]", "xpath:position"],
+        ["xpath=//h1[contains(.,'. Seu imc é: 25.00')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3e29d94b-8bfb-4cf1-a2df-63178d8a65e0",
+      "comment": "",
+      "command": "click",
+      "target": "css=body",
+      "targets": [
+        ["css=body", "css:finder"],
+        ["xpath=//body", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9927d9ea-d94a-4ceb-bc3d-9a1f1829f4f0",
+      "comment": "",
+      "command": "click",
+      "target": "css=body",
+      "targets": [
+        ["css=body", "css:finder"],
+        ["xpath=//body", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b186a109-fb17-4e68-a513-2757243c5ce6",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=h1:nth-child(5)",
+      "targets": [
+        ["css=h1:nth-child(5)", "css:finder"],
+        ["xpath=//h1[3]", "xpath:position"]
+      ],
+      "value": ". Sua classificação é: Sobrepeso"
+    }, {
+      "id": "03bec17f-cce7-4964-b008-33c595b28a1c",
+      "comment": "",
+      "command": "click",
+      "target": "css=body",
+      "targets": [
+        ["css=body", "css:finder"],
+        ["xpath=//body", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "4686fc86-251e-41dc-b361-caa284877def",
+    "name": "Teste Condição Normal menor ",
+    "commands": [{
+      "id": "b843b061-73e4-42a1-8924-74165a16bf3d",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:5501/ex03JS/imc/index.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0ceaa909-449d-465f-a044-ad75655e24ca",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0d929950-44ff-4d15-a382-d1bfcd3a0606",
+      "comment": "",
+      "command": "click",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=Nome", "name"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e2381060-efdb-488a-8e33-3b94eccad513",
+      "comment": "",
+      "command": "type",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=Nome", "name"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Maria "
+    }, {
+      "id": "78a711f9-1094-4ce6-949c-29cd98fc5ce9",
+      "comment": "",
+      "command": "click",
+      "target": "id=peso",
+      "targets": [
+        ["id=peso", "id"],
+        ["name=Peso", "name"],
+        ["css=#peso", "css:finder"],
+        ["xpath=//input[@id='peso']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "118d5190-b870-4be8-abf9-77e9c26660fe",
+      "comment": "",
+      "command": "type",
+      "target": "id=peso",
+      "targets": [
+        ["id=peso", "id"],
+        ["name=Peso", "name"],
+        ["css=#peso", "css:finder"],
+        ["xpath=//input[@id='peso']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "65.90"
+    }, {
+      "id": "9206ba06-a01d-4161-a549-85cd36ca8051",
+      "comment": "",
+      "command": "click",
+      "target": "id=altura",
+      "targets": [
+        ["id=altura", "id"],
+        ["name=Altura", "name"],
+        ["css=#altura", "css:finder"],
+        ["xpath=//input[@id='altura']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6f890d3b-ed2f-4830-bd42-bea5ffb4acf9",
+      "comment": "",
+      "command": "type",
+      "target": "id=altura",
+      "targets": [
+        ["id=altura", "id"],
+        ["name=Altura", "name"],
+        ["css=#altura", "css:finder"],
+        ["xpath=//input[@id='altura']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "1.63"
+    }, {
+      "id": "1ebf97bb-14d1-4612-95f5-41a36c46eaa7",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Ver')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "22c15b41-7bcd-484b-87bb-fe261cf9d7cd",
+      "comment": "",
+      "command": "click",
+      "target": "css=body",
+      "targets": [
+        ["css=body", "css:finder"],
+        ["xpath=//body", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1f94fa83-d8cd-4875-942c-cc5569e798b1",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//h1[2]", "xpath:position"],
+        ["xpath=//h1[contains(.,'. Seu imc é: 24.80')]", "xpath:innerText"]
+      ],
+      "value": ". Seu imc é: 24.80"
+    }, {
+      "id": "7a0de035-b086-4692-903e-ba521b4a1940",
+      "comment": "",
+      "command": "click",
+      "target": "css=body",
+      "targets": [
+        ["css=body", "css:finder"],
+        ["xpath=//body", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "2cc27e19-dd52-4550-a2a0-f0de6c246f04",
+    "name": "Teste Condição sobrepeso igualdade ",
+    "commands": [{
+      "id": "6eeca241-db80-4244-a52a-ad2ee3f877a2",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:5501/ex03JS/imc/index.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a644225d-ebc5-44b8-9c68-916053fc9868",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c1bf0c6b-1ae0-428c-b922-fede9d55db87",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Ver')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "01d64181-3045-4fb1-859e-929ee22ce9b1",
+      "comment": "",
+      "command": "click",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//h1[2]", "xpath:position"],
+        ["xpath=//h1[contains(.,'. Seu imc é: 29.90')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "af4c4f84-10ef-4481-8fdb-fec41eca220d",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//h1[2]", "xpath:position"],
+        ["xpath=//h1[contains(.,'. Seu imc é: 29.90')]", "xpath:innerText"]
+      ],
+      "value": ". Seu imc é: 29.90"
+    }]
+  }, {
+    "id": "7bc51d19-9496-49ae-960f-88e7d42278f7",
+    "name": "Teste Condição sobrepeso maior ",
+    "commands": [{
+      "id": "517be416-24c1-4f98-9143-66d29794f059",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:5501/ex03JS/imc/index.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "abf650c9-4dfe-423a-a576-ef0ef330eade",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ac6917d3-95bc-49b8-97d9-ce4b3e4b4b7f",
+      "comment": "",
+      "command": "click",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=Nome", "name"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "00bf9871-f625-48e7-994d-406952a7d706",
+      "comment": "",
+      "command": "type",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=Nome", "name"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Maria "
+    }, {
+      "id": "9a5c87b7-a63e-4d5b-a84a-0106ec690893",
+      "comment": "",
+      "command": "click",
+      "target": "id=peso",
+      "targets": [
+        ["id=peso", "id"],
+        ["name=Peso", "name"],
+        ["css=#peso", "css:finder"],
+        ["xpath=//input[@id='peso']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bea873f1-ec39-406a-8789-02b8ebcedc89",
+      "comment": "",
+      "command": "click",
+      "target": "id=peso",
+      "targets": [
+        ["id=peso", "id"],
+        ["name=Peso", "name"],
+        ["css=#peso", "css:finder"],
+        ["xpath=//input[@id='peso']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a69bcf8b-a782-424d-a804-ef168e150e76",
+      "comment": "",
+      "command": "type",
+      "target": "id=peso",
+      "targets": [
+        ["id=peso", "id"],
+        ["name=Peso", "name"],
+        ["css=#peso", "css:finder"],
+        ["xpath=//input[@id='peso']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "79,70"
+    }, {
+      "id": "70a623d2-2ee4-41ca-8731-6efde1d3b89e",
+      "comment": "",
+      "command": "click",
+      "target": "id=altura",
+      "targets": [
+        ["id=altura", "id"],
+        ["name=Altura", "name"],
+        ["css=#altura", "css:finder"],
+        ["xpath=//input[@id='altura']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "527db0ce-3833-40e5-b7bf-b3a2a37e34cd",
+      "comment": "",
+      "command": "type",
+      "target": "id=altura",
+      "targets": [
+        ["id=altura", "id"],
+        ["name=Altura", "name"],
+        ["css=#altura", "css:finder"],
+        ["xpath=//input[@id='altura']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "1.63"
+    }, {
+      "id": "d027ccb5-bb16-42fd-8edc-fd5c2cca7fab",
+      "comment": "",
+      "command": "click",
+      "target": "id=peso",
+      "targets": [
+        ["id=peso", "id"],
+        ["name=Peso", "name"],
+        ["css=#peso", "css:finder"],
+        ["xpath=//input[@id='peso']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bbab5f0d-a961-4c7d-a8c1-bf12ba997690",
+      "comment": "",
+      "command": "type",
+      "target": "id=peso",
+      "targets": [
+        ["id=peso", "id"],
+        ["name=Peso", "name"],
+        ["css=#peso", "css:finder"],
+        ["xpath=//input[@id='peso']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "79.70"
+    }, {
+      "id": "d3ea9b5a-394e-41ec-b483-97527f8c90ed",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Ver')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a80954a2-7962-47de-91aa-ac20ef7aa3ff",
+      "comment": "",
+      "command": "click",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//h1[2]", "xpath:position"],
+        ["xpath=//h1[contains(.,'. Seu imc é: 30.00')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f56e0e06-5bc2-4648-b02a-53951881c524",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//h1[2]", "xpath:position"],
+        ["xpath=//h1[contains(.,'. Seu imc é: 30.00')]", "xpath:innerText"]
+      ],
+      "value": ". Seu imc é: 30.00"
+    }]
+  }, {
+    "id": "d2b665ad-9d6e-484f-88b1-8c80aec2a1eb",
+    "name": "Teste Condição sobrepeso menor",
+    "commands": [{
+      "id": "504341bd-9378-4e90-a58f-18421e21745c",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:5501/ex03JS/imc/index.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1f02704a-953a-4ea7-a368-909ccaa17ef6",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d543a9b7-51fe-450b-b371-0e4eb74cb61a",
+      "comment": "",
+      "command": "click",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=Nome", "name"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e6ee998a-7a28-47b5-8bc9-1ceb7e6803b1",
+      "comment": "",
+      "command": "type",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=Nome", "name"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Maria "
+    }, {
+      "id": "79aef976-81c2-4b61-bd09-b9b0d6339ffa",
+      "comment": "",
+      "command": "click",
+      "target": "id=peso",
+      "targets": [
+        ["id=peso", "id"],
+        ["name=Peso", "name"],
+        ["css=#peso", "css:finder"],
+        ["xpath=//input[@id='peso']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4057534f-7bd0-4bae-85b3-1dc296b9e27b",
+      "comment": "",
+      "command": "click",
+      "target": "id=peso",
+      "targets": [
+        ["id=peso", "id"],
+        ["name=Peso", "name"],
+        ["css=#peso", "css:finder"],
+        ["xpath=//input[@id='peso']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5210ef84-d39d-465d-84a9-7563adee23f4",
+      "comment": "",
+      "command": "type",
+      "target": "id=peso",
+      "targets": [
+        ["id=peso", "id"],
+        ["name=Peso", "name"],
+        ["css=#peso", "css:finder"],
+        ["xpath=//input[@id='peso']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "79.17"
+    }, {
+      "id": "163418aa-f4e9-401e-bd2a-628858cae12d",
+      "comment": "",
+      "command": "click",
+      "target": "id=altura",
+      "targets": [
+        ["id=altura", "id"],
+        ["name=Altura", "name"],
+        ["css=#altura", "css:finder"],
+        ["xpath=//input[@id='altura']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b964a1e1-b9e2-412d-ab07-770f0f5c7046",
+      "comment": "",
+      "command": "type",
+      "target": "id=altura",
+      "targets": [
+        ["id=altura", "id"],
+        ["name=Altura", "name"],
+        ["css=#altura", "css:finder"],
+        ["xpath=//input[@id='altura']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "1.63"
+    }, {
+      "id": "b4b34687-5ce9-4ac3-b4a5-52c10c53e9dd",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Ver')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1ab7959c-8b0c-4dbc-8098-f09c447c64ec",
+      "comment": "",
+      "command": "click",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//h1[2]", "xpath:position"],
+        ["xpath=//h1[contains(.,'. Seu imc é: 29.80')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fb76c3b4-d743-4458-8502-2dee1753aa2b",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//h1[2]", "xpath:position"],
+        ["xpath=//h1[contains(.,'. Seu imc é: 29.80')]", "xpath:innerText"]
+      ],
+      "value": ". Seu imc é: 29.80"
+    }, {
+      "id": "abada6a6-3c79-4c4f-9e9e-8d2c745fe973",
+      "comment": "",
+      "command": "click",
+      "target": "css=body",
+      "targets": [
+        ["css=body", "css:finder"],
+        ["xpath=//body", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "9eb1a2c1-e9cd-42cf-ae37-22ab6c161503",
+    "name": "Teste Condição Obesidade grau II igualdade ",
+    "commands": [{
+      "id": "be47519e-9017-49a6-a8eb-9f3377ca454e",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:5501/ex03JS/imc/index.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "173d51ac-9199-4f4a-a9cd-a657c7ad44e6",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1290c475-af29-493a-a1b2-6fa1ef09c5f9",
+      "comment": "",
+      "command": "click",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=Nome", "name"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e0ecbd8f-750f-4a41-8f7f-3944d8297def",
+      "comment": "",
+      "command": "type",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=Nome", "name"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Maria "
+    }, {
+      "id": "45ad6557-892a-48e2-bf34-cfd7330607c4",
+      "comment": "",
+      "command": "click",
+      "target": "id=peso",
+      "targets": [
+        ["id=peso", "id"],
+        ["name=Peso", "name"],
+        ["css=#peso", "css:finder"],
+        ["xpath=//input[@id='peso']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9f6ce4e0-62d9-4c86-9d9a-dc1aac69ebf2",
+      "comment": "",
+      "command": "click",
+      "target": "id=peso",
+      "targets": [
+        ["id=peso", "id"],
+        ["name=Peso", "name"],
+        ["css=#peso", "css:finder"],
+        ["xpath=//input[@id='peso']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a16e0f85-cb79-4367-929c-0a9869c266a1",
+      "comment": "",
+      "command": "type",
+      "target": "id=peso",
+      "targets": [
+        ["id=peso", "id"],
+        ["name=Peso", "name"],
+        ["css=#peso", "css:finder"],
+        ["xpath=//input[@id='peso']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "106"
+    }, {
+      "id": "890ae9d1-c8a9-4e94-a891-bf089721c6cf",
+      "comment": "",
+      "command": "click",
+      "target": "id=altura",
+      "targets": [
+        ["id=altura", "id"],
+        ["name=Altura", "name"],
+        ["css=#altura", "css:finder"],
+        ["xpath=//input[@id='altura']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3a3f7e69-5cfa-40c2-b65c-28263ea0984f",
+      "comment": "",
+      "command": "type",
+      "target": "id=altura",
+      "targets": [
+        ["id=altura", "id"],
+        ["name=Altura", "name"],
+        ["css=#altura", "css:finder"],
+        ["xpath=//input[@id='altura']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "1.63"
+    }, {
+      "id": "66b54d64-14f1-4f2d-b9d6-1842ec037b80",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Ver')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "09b5fa0b-b9b0-4ca5-a5af-83c077c75577",
+      "comment": "",
+      "command": "click",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//h1[2]", "xpath:position"],
+        ["xpath=//h1[contains(.,'. Seu imc é: 39.90')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bf99d57a-a73b-44fc-b07d-343394d45b6f",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//h1[2]", "xpath:position"],
+        ["xpath=//h1[contains(.,'. Seu imc é: 39.90')]", "xpath:innerText"]
+      ],
+      "value": ". Seu imc é: 39.90"
+    }]
+  }, {
+    "id": "d51515ad-b6ba-467e-a86a-a66b24ede632",
+    "name": "Teste Condição Obesidade grau II maior",
+    "commands": [{
+      "id": "c9b51baa-452d-4f49-ad30-054b7e417809",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:5501/ex03JS/imc/index.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b567b8fd-bd36-40eb-ba73-8c24f9beff9d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "57719600-2b0d-4595-902d-99d5da7cf957",
+      "comment": "",
+      "command": "click",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=Nome", "name"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b02158de-58ea-492a-9a51-d101ee46f290",
+      "comment": "",
+      "command": "type",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=Nome", "name"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Maria "
+    }, {
+      "id": "cc79c19b-13db-40a0-a7fc-cb1ba8d239b1",
+      "comment": "",
+      "command": "click",
+      "target": "id=peso",
+      "targets": [
+        ["id=peso", "id"],
+        ["name=Peso", "name"],
+        ["css=#peso", "css:finder"],
+        ["xpath=//input[@id='peso']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6e9b3bb2-aeef-4604-b321-021f64a176bb",
+      "comment": "",
+      "command": "click",
+      "target": "id=peso",
+      "targets": [
+        ["id=peso", "id"],
+        ["name=Peso", "name"],
+        ["css=#peso", "css:finder"],
+        ["xpath=//input[@id='peso']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9751ec3d-5d55-40e2-a61a-e28ace12a38c",
+      "comment": "",
+      "command": "type",
+      "target": "id=peso",
+      "targets": [
+        ["id=peso", "id"],
+        ["name=Peso", "name"],
+        ["css=#peso", "css:finder"],
+        ["xpath=//input[@id='peso']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "106.28"
+    }, {
+      "id": "34ee30b5-54a3-49b3-91aa-278d078bcd53",
+      "comment": "",
+      "command": "click",
+      "target": "id=altura",
+      "targets": [
+        ["id=altura", "id"],
+        ["name=Altura", "name"],
+        ["css=#altura", "css:finder"],
+        ["xpath=//input[@id='altura']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cde2200e-1045-4931-bce4-688f19dddd4a",
+      "comment": "",
+      "command": "type",
+      "target": "id=altura",
+      "targets": [
+        ["id=altura", "id"],
+        ["name=Altura", "name"],
+        ["css=#altura", "css:finder"],
+        ["xpath=//input[@id='altura']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "1.63"
+    }, {
+      "id": "b5e306aa-466d-40e4-b7bf-e3bc5e6884e0",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Ver')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a5762502-49da-4660-9908-a1ba529cfddd",
+      "comment": "",
+      "command": "click",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//h1[2]", "xpath:position"],
+        ["xpath=//h1[contains(.,'. Seu imc é: 40.00')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "73b4b7ff-90e4-45cc-8f8a-a4cc5050cc20",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//h1[2]", "xpath:position"],
+        ["xpath=//h1[contains(.,'. Seu imc é: 40.00')]", "xpath:innerText"]
+      ],
+      "value": ". Seu imc é: 40.00"
+    }]
+  }, {
+    "id": "e2d6e447-8598-4493-a956-eb582c5914e6",
+    "name": "Teste Condição Obesidade grau II menor ",
+    "commands": [{
+      "id": "3082d170-40cc-4b9e-b8ab-8a76fa1daf96",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:5501/ex03JS/imc/index.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d4fefa41-7be3-4c67-962c-9786b3010a43",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2fedc287-8be6-47eb-addd-44d3d0ac55c9",
+      "comment": "",
+      "command": "click",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=Nome", "name"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3f8ddd3a-39e5-4d0d-a775-199f4ec0dc29",
+      "comment": "",
+      "command": "type",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=Nome", "name"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Maria "
+    }, {
+      "id": "d09143f3-79aa-42cb-b816-45a645454ac4",
+      "comment": "",
+      "command": "click",
+      "target": "id=peso",
+      "targets": [
+        ["id=peso", "id"],
+        ["name=Peso", "name"],
+        ["css=#peso", "css:finder"],
+        ["xpath=//input[@id='peso']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a2509ac5-75e0-4dac-946b-d61f5100b85f",
+      "comment": "",
+      "command": "click",
+      "target": "id=peso",
+      "targets": [
+        ["id=peso", "id"],
+        ["name=Peso", "name"],
+        ["css=#peso", "css:finder"],
+        ["xpath=//input[@id='peso']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8d8e875c-355a-4369-9605-99e8baf2a5e9",
+      "comment": "",
+      "command": "type",
+      "target": "id=peso",
+      "targets": [
+        ["id=peso", "id"],
+        ["name=Peso", "name"],
+        ["css=#peso", "css:finder"],
+        ["xpath=//input[@id='peso']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "105.75"
+    }, {
+      "id": "cf43e83d-0fb0-4e86-9d4a-4dfafaceeff1",
+      "comment": "",
+      "command": "click",
+      "target": "id=altura",
+      "targets": [
+        ["id=altura", "id"],
+        ["name=Altura", "name"],
+        ["css=#altura", "css:finder"],
+        ["xpath=//input[@id='altura']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2ff68360-99d1-431a-8e37-3733f4c30642",
+      "comment": "",
+      "command": "type",
+      "target": "id=altura",
+      "targets": [
+        ["id=altura", "id"],
+        ["name=Altura", "name"],
+        ["css=#altura", "css:finder"],
+        ["xpath=//input[@id='altura']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "1.63"
+    }, {
+      "id": "df7a4960-0ce2-490b-9bec-c8dd010b8164",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Ver')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fd794971-df44-4e32-8040-cd4fa08a3745",
+      "comment": "",
+      "command": "click",
+      "target": "css=body",
+      "targets": [
+        ["css=body", "css:finder"],
+        ["xpath=//body", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "633b60f4-ff62-4a0b-b489-01cdc252647d",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//h1[2]", "xpath:position"],
+        ["xpath=//h1[contains(.,'. Seu imc é: 39.80')]", "xpath:innerText"]
+      ],
+      "value": ". Seu imc é: 39.80"
+    }]
+  }, {
+    "id": "6bf65619-5be4-4a16-ab94-f4f44f8aeecf",
+    "name": "Teste obesidade grau III",
+    "commands": [{
+      "id": "2ee03abe-6ff2-4bac-86a0-af7464552b70",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:5501/ex03JS/imc/index.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9ec30794-793b-4195-80e5-e870365e05aa",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e54b06e1-18b1-4329-8765-0a70c6a30de9",
+      "comment": "",
+      "command": "click",
+      "target": "id=peso",
+      "targets": [
+        ["id=peso", "id"],
+        ["name=Peso", "name"],
+        ["css=#peso", "css:finder"],
+        ["xpath=//input[@id='peso']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "31eccf36-fd7e-425a-b23b-dfa503c9eec2",
+      "comment": "",
+      "command": "click",
+      "target": "id=altura",
+      "targets": [
+        ["id=altura", "id"],
+        ["name=Altura", "name"],
+        ["css=#altura", "css:finder"],
+        ["xpath=//input[@id='altura']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0df1ea86-1bc4-42c8-8007-74fefce42d04",
+      "comment": "",
+      "command": "type",
+      "target": "id=altura",
+      "targets": [
+        ["id=altura", "id"],
+        ["name=Altura", "name"],
+        ["css=#altura", "css:finder"],
+        ["xpath=//input[@id='altura']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "1.63"
+    }, {
+      "id": "bd784c5a-82dc-4ac2-af45-b0d6c7657999",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Ver')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "146abddb-e3e5-4765-8fc7-0b020f82e5bc",
+      "comment": "",
+      "command": "click",
+      "target": "css=body",
+      "targets": [
+        ["css=body", "css:finder"],
+        ["xpath=//body", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4ceed09f-e464-416f-bb58-61b224641c85",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//h1[2]", "xpath:position"],
+        ["xpath=//h1[contains(.,'. Seu imc é: 41.00')]", "xpath:innerText"]
+      ],
+      "value": ". Seu imc é: 41.00"
+    }]
+  }],
+  "suites": [{
+    "id": "a4e27620-fe92-490d-aab9-ea62f7fcaf2d",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["79d96b8a-c0f9-4c68-9945-2aa006cadf85"]
+  }],
+  "urls": ["http://127.0.0.1:5501/ex03JS/imc/index.html"],
+  "plugins": []
+}
