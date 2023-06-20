@@ -10,23 +10,24 @@ var Altura = dados[2]
 var msg
 var resultado = Peso/(Altura*Altura)
 
-    if(resultado < 18.5) {
+
+    if(resultado.toFixed(2) < 18.5) {
         console.log("Magreza")
         msg =  "Magreza"
 
-    } else if ((resultado >= 18.5) && (resultado <= 24.9)) {
+    } else if ((resultado.toFixed(2) >= 18.5) && (resultado.toFixed(2) <= 24.9)) {
         console.log("Normal")
         console.log(resultado)
         msg = "Normal"
-    } else if ((resultado >= 25) && (resultado <= 29.9)) {
+    } else if ((resultado.toFixed(2) >= 25) && (resultado.toFixed(2) <= 29.9)) {
         console.log("Sobrepeso")
         console.log(resultado)
         msg = 'Sobrepeso'
-    } else if ((resultado >= 30) && (resultado <= 39.9)) {
+    } else if ((resultado.toFixed(2) >= 30) && (resultado.toFixed(2) <= 39.9)) {
         console.log("Obesidade grau II")
         msg = 'Obesidade grau II'
         console.log(resultado)
-    } else if ((resultado >= 40) ) {
+    } else if ((resultado.toFixed(2) >= 40) ) {
         console.log("Obesidade grau III")
         msg = 'Obesidade grau III'
         console.log(resultado)
