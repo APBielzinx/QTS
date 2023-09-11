@@ -3,7 +3,7 @@
         'name' => 'aluno/php_unit',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => '5e35da2898f0c436f4383a71e85e2f445c7cd198',
+        'reference' => '762f47ddfb943edbf0c02688202d09f0fd0f8c41',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,7 +13,7 @@
         'aluno/php_unit' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => '5e35da2898f0c436f4383a71e85e2f445c7cd198',
+            'reference' => '762f47ddfb943edbf0c02688202d09f0fd0f8c41',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
