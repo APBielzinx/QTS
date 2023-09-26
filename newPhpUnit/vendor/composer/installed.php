@@ -1,6 +1,6 @@
 <?php return array(
     'root' => array(
-        'name' => 'aluno/new-php-unit',
+        'name' => 'aluno/php_unit',
         'pretty_version' => '1.0.0+no-version-set',
         'version' => '1.0.0.0',
         'reference' => NULL,
@@ -10,7 +10,7 @@
         'dev' => true,
     ),
     'versions' => array(
-        'aluno/new-php-unit' => array(
+        'aluno/php_unit' => array(
             'pretty_version' => '1.0.0+no-version-set',
             'version' => '1.0.0.0',
             'reference' => NULL,
@@ -65,9 +65,9 @@
             'dev_requirement' => true,
         ),
         'phpunit/php-code-coverage' => array(
-            'pretty_version' => '9.2.28',
-            'version' => '9.2.28.0',
-            'reference' => '7134a5ccaaf0f1c92a4f5501a6c9f98ac4dcc0ef',
+            'pretty_version' => '9.2.27',
+            'version' => '9.2.27.0',
+            'reference' => 'b0a88255cb70d52653d80c890bd7f38740ea50d1',
             'type' => 'library',
             'install_path' => __DIR__ . '/../phpunit/php-code-coverage',
             'aliases' => array(),
@@ -110,9 +110,9 @@
             'dev_requirement' => true,
         ),
         'phpunit/phpunit' => array(
-            'pretty_version' => '9.6.12',
-            'version' => '9.6.12.0',
-            'reference' => 'a122c2ebd469b751d774aa0f613dc0d67697653f',
+            'pretty_version' => '9.6.11',
+            'version' => '9.6.11.0',
+            'reference' => '810500e92855eba8a7a5319ae913be2da6f957b0',
             'type' => 'library',
             'install_path' => __DIR__ . '/../phpunit/phpunit',
             'aliases' => array(),

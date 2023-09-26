@@ -2,7 +2,7 @@
     namespace tests;
     
     use PHPUnit\Framework\TestCase;
-    use app\libraries\Product;
+    use app\Product;
 
     class ProductTest extends TestCase
     {

@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInitddd4814de2fefcf4a2c04738e3270dd5
+class ComposerStaticInit2b51a2b191faa2e9e92cd1fe8ef3169d
 {
     public static $files = array (
         '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
@@ -964,16 +964,19 @@ class ComposerStaticInitddd4814de2fefcf4a2c04738e3270dd5
         'TheSeer\\Tokenizer\\TokenCollectionException' => __DIR__ . '/..' . '/theseer/tokenizer/src/TokenCollectionException.php',
         'TheSeer\\Tokenizer\\Tokenizer' => __DIR__ . '/..' . '/theseer/tokenizer/src/Tokenizer.php',
         'TheSeer\\Tokenizer\\XMLSerializer' => __DIR__ . '/..' . '/theseer/tokenizer/src/XMLSerializer.php',
-        'app\\libraries\\Product' => __DIR__ . '/../..' . '/app/libraries/Product.php',
+        'app\\PessoaImpostoRenda' => __DIR__ . '/../..' . '/app/PessoaImpostoRenda.php',
+        'app\\Product' => __DIR__ . '/../..' . '/app/Product.php',
+        'tests\\CalculoIMCTest' => __DIR__ . '/../..' . '/tests/CalculoIMCTest.php',
+        'tests\\PessoaImpostoRendaTest' => __DIR__ . '/../..' . '/tests/PessoaImpostoRendaTest.php',
         'tests\\ProductTest' => __DIR__ . '/../..' . '/tests/ProductTest.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInitddd4814de2fefcf4a2c04738e3270dd5::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInitddd4814de2fefcf4a2c04738e3270dd5::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInitddd4814de2fefcf4a2c04738e3270dd5::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit2b51a2b191faa2e9e92cd1fe8ef3169d::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit2b51a2b191faa2e9e92cd1fe8ef3169d::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit2b51a2b191faa2e9e92cd1fe8ef3169d::$classMap;
 
         }, null, ClassLoader::class);
     }

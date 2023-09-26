@@ -1,5 +1,5 @@
 {
-    "name": "aluno/new-php-unit",
+    "name": "aluno/php_unit",
     "autoload": {
         "psr-4": {
             "app\\": "app/"
@@ -9,12 +9,11 @@
         "psr-4": {
             "tests\\": "tests/"
         }
-
     },
-
     "authors": [
         {
-            "name": "Duada"
+            "name": "Rafael",
+            "email": "rafael@gmail.com"
         }
     ],
     "phpunit/php-code-coverage": "^4.0.3",
